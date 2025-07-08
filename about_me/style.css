@@ -1,0 +1,502 @@
+body {
+    background-color: #dfd5d5;
+}
+
+.nav {
+    width: 270px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    font-family: "Rubik", sans-serif;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -7px;
+    margin-top: -7px;
+}
+
+.nav h1 {
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.nav h1 a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav ul {
+    list-style: none;
+    margin-top: 120px;
+    padding-left: 30px;
+}
+
+/* === YANGI: Umumiy Link Block === */
+.nav-link {
+    display: block;
+    text-decoration: none;
+}
+
+.nav-link h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+/* Chapdan chiziq */
+.nav-link h3::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: crimson;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+}
+
+/* Iconlar */
+.nav-link h3 svg {
+    width: 18px;
+    height: 18px;
+    fill: black;
+    transition: all 0.3s ease;
+}
+
+/* Matn (span o‘rnida ishlatiladi) */
+.nav-link h3 span {
+    color: black;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+/* Hover effektlar */
+.nav-link:hover h3 {
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover h3::before {
+    transform: scaleY(1);
+}
+
+.nav-link:hover h3 span {
+    color: crimson;
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.nav-link:hover h3 svg {
+    fill: crimson;
+    transform: scale(1.2);
+}
+
+.nav p {
+    margin-left: 38px;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: small;
+}
+
+/*About_me*/
+.about_me {
+    width: 1150px;
+    height: auto;
+    margin-left: 350px;
+    margin-top: 60px;
+    position: absolute;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+.hr1 {
+    width: 52px;
+    border: 2.3px solid crimson;
+    position: relative;
+    left: -548px;
+    margin-top: -18px;
+}
+
+.hr2 {
+    width: 32px;
+    border: 2.3px solid crimson;
+    position: relative;
+    left: -558px;
+    margin-top: -7px;
+}
+
+.about_me h2 b {
+    font-weight: 550;
+    font-size: large;
+    color: crimson;
+}
+
+.about_me h2 {
+    font-weight: 550;
+    font-size: x-large;
+    position: relative;
+    top: 20px;
+}
+
+.about_me .about_mee {
+    font-size: large;
+    color: rgba(0, 0, 0, 0.404);
+    margin-top: 45px;
+    line-height: 23px;
+}
+
+/*about_me_section*/
+.about_me_section {
+    width: 1150px;
+    height: 380px;
+    position: relative;
+    top: 30px;
+    line-height: 30px;
+}
+
+.about_me_section_p {
+    font-size: 17px;
+}
+
+.about_me_section_p span {
+    color: rgba(0, 0, 0, 0.404);
+}
+
+.about_me_section2 {
+    margin-left: 310px;
+    margin-top: -398px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+    line-height: 30px;
+}
+
+.about_me_section button {
+    padding: 15px 22px;
+    font-size: 16px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.about_me_section button:hover {
+    background-color: white;
+    color: crimson;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+}
+
+/*skill*/
+
+.skills {
+    margin-left: 640px;
+    margin-top: -290px;
+    line-height: 40px;
+}
+
+.skill {
+    margin-bottom: 10px;
+    width: 450px;
+    /* kerakli o'lchamga moslashtir */
+}
+
+.skill h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgba(12, 12, 12, 0.689);
+}
+
+.bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: crimson;
+    border-radius: 10px;
+    transform-origin: left;
+    transform: scaleX(0);
+    /* boshlanish holati */
+    animation: growBar 2s ease forwards;
+}
+
+/* Har bir texnologiya uchun delay qo‘shiladi */
+.fill.html {
+    animation-delay: 0.2s;
+}
+
+.fill.css {
+    animation-delay: 0.4s;
+}
+
+.fill.bootstrap {
+    animation-delay: 0.6s;
+}
+
+.fill.javascript {
+    animation-delay: 0.8s;
+}
+
+.fill.react {
+    animation-delay: 1s;
+}
+
+/* To‘g‘ri width qo‘shib beramiz animatsiyadan keyin */
+.fill.html::after {
+    content: "";
+    display: block;
+    width: 86%;
+}
+
+.fill.css::after {
+    content: "";
+    display: block;
+    width: 90%;
+}
+
+.fill.bootstrap::after {
+    content: "";
+    display: block;
+    width: 90%;
+}
+
+.fill.javascript::after {
+    content: "";
+    display: block;
+    width: 60%;
+}
+
+.fill.react::after {
+    content: "";
+    display: block;
+    width: 90%;
+}
+
+/* Animatsiya scaleX orqali */
+@keyframes growBar {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* /skill*/
+
+/*about_me_bottom*/
+.about_me_bottom {
+    display: grid;
+    width: 1100px;
+    height: 740px;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 180px;
+}
+
+.about_me_bottom div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    
+}
+
+.about_me_bottom .education h2 {
+    margin-top: -90px;
+}
+
+.about_me_bottom .experience h2 {
+    margin-top: -90px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 628px;
+    /* balandlikni keraklicha o‘zgartirasan */
+    background-color: crimson;
+    border: none;
+    margin: 0 25px;
+    margin-top: 100px;
+}
+
+.vertical-line2 {
+    width: 2px;
+    height: 628px;
+    /* balandlikni keraklicha o‘zgartirasan */
+    background-color: crimson;
+    border: none;
+    margin: 0 25px;
+    margin-top: 100px;
+}
+
+.about_me_bottom .education svg {
+    width: 15px;
+    position: relative;
+    margin-left: 53px;
+    top: -625px;
+}
+
+.about_me_bottom .experience svg {
+    width: 15px;
+    position: relative;
+    margin-left: 53px;
+    top: -625px;
+}
+
+.date {
+    font-size: 14px;
+    color: rgb(95, 94, 94);
+    margin-left: 75px;
+    margin-top: -645px;
+}
+
+.education h4 {
+    margin-left: 50px;
+}
+
+.school__description {
+    font-size: 18px;
+    margin-left: 50px;
+    color: rgb(121, 121, 121);
+    line-height: 24px;
+}
+
+.smm__description {
+    font-size: 18px;
+    margin-left: 50px;
+    color: rgb(121, 121, 121);
+    line-height: 24px;
+    width: 460px;
+}
+
+.smm_description {
+    position: absolute;
+    margin-top: 670px;
+}
+
+.student_it__park {
+    font-size: 18px;
+    margin-left: 50px;
+    color: rgb(121, 121, 121);
+    line-height: 24px;
+    width: 460px;
+}
+
+.student_it_park {
+    position: absolute;
+    margin-top: 870px;
+}
+
+.dot1 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 18px;
+    border-radius: 50%;
+    margin-top: -705px;
+    position: relative;
+}
+
+.dot2 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 18px;
+    border-radius: 50%;
+    margin-top: 250px;
+    position: relative;
+}
+
+.dot3 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 18px;
+    border-radius: 50%;
+    margin-top: 180px;
+    position: relative;
+}
+
+.dot4 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 584px;
+    border-radius: 50%;
+    margin-top: -480px;
+    position: relative;
+}
+
+.dot5 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 584px;
+    border-radius: 50%;
+    margin-top: 255px;
+    position: relative;
+}
+
+.dot6 {
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin-left: 584px;
+    border-radius: 50%;
+    margin-top: 237px;
+    position: relative;
+}
+
+.html_css_developer h4 {
+    margin-left: 50px;
+}
+
+.javascript_developer h4 {
+    margin-left: 50px;
+}
+
+.javascript_developer {
+    margin-top: 650px;
+    position: absolute;
+}
+
+.react_developer h4 {
+    margin-left: 50px;
+}
+
+.react_developer {
+    margin-top: 900px;
+    position: absolute;
+}
+.about_me_bottom .education,
+.about_me_bottom .experience {
+    transition: all 0.3s ease;
+}
+
+.about_me_bottom .education:hover,
+.about_me_bottom .experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fafafa;
+}
+
+/*/ About me*/
