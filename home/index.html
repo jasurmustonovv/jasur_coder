@@ -12,6 +12,9 @@
 <body>
     <div class="nav">
         <h1>Jasur <a href="#">Coder</a></h1>
+        <!-- .nav h1'dan keyin qo‘shing -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
         <ul>
           <li>
       
@@ -108,7 +111,13 @@
             </svg></div>
     </div>
     <!-- /Home -->
-
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.nav ul');
+        menu.classList.toggle('show');
+      }
+    </script>
+    
 </body>
 
 </html>
