@@ -1,12 +1,12 @@
 body {
-    background-color:#0E121A;
+    background-color: #0E121A;
     color: white;
 }
 
 .nav {
     width: 270px;
     height: 100vh;
-    background-color: white;
+    background-color: #232833;
     position: fixed;
     font-family: "Rubik", sans-serif;
     box-shadow: 0.1px 0 10px #00ffff8f;
@@ -17,11 +17,14 @@ body {
 .nav h1 {
     margin-left: 40px;
     margin-top: 100px;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
 }
 
 .nav h1 a {
     text-decoration: none;
-    color: red;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;    
     font-weight: bold;
     font-size: 30px;
 }
@@ -57,7 +60,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: crimson;
+    background-color:#00FFFF; 
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -68,12 +71,13 @@ body {
 .nav-link h3 svg {
     width: 18px;
     height: 18px;
-    fill: black;
+    fill: white;
     transition: all 0.3s ease;
 }
 
 /* Matn (span o‘rnida ishlatiladi) */
 .nav-link h3 span {
+    color: white;
     transition: all 0.3s ease;
     font-size: 16px;
 }
@@ -88,14 +92,17 @@ body {
     transform: scaleY(1);
 }
 
-.nav-link:hover h3 span {
-    color: crimson;
+.nav-link:hover h3 span {    
     font-size: 17.5px;
     font-weight: bold;
 }
-
+.nav-link:active h3 span{
+    color: crimson;
+    text-shadow: 0 0 10px black;
+    transition: all 0.2s ease;
+}
 .nav-link:hover h3 svg {
-    fill: crimson;
+    fill: white;
     transform: scale(1.2);
 }
 
@@ -176,6 +183,10 @@ body {
 .description p {
     margin-top: -10px;
     font-size: 17px;
+    color: #00FFFF;
+    margin-left: 8px;
+    text-shadow: 0 0 10px #00ffff;
+
 }
 
 .description {
@@ -183,4 +194,12 @@ body {
     margin-left: 810px;
     margin-top: 440px;
     font-family: "Rubik", sans-serif;
-}
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
+
+} 
+/* Katta telefonlar (480px - 768px oralig‘i) */
+@media (max-width: 768px) {
+    
+
+  }
