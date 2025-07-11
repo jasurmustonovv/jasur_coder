@@ -1,14 +1,15 @@
 body {
-    background-color: #dfd5d5;
+    background: #0E121A;
+    color: #e2e8f0;
 }
 
 .nav {
     width: 270px;
     height: 100vh;
-    background-color: white;
+    background-color: #232833;
     position: fixed;
     font-family: "Rubik", sans-serif;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.1px 0 10px #00ffff8f;
     margin-left: -7px;
     margin-top: -7px;
 }
@@ -16,11 +17,14 @@ body {
 .nav h1 {
     margin-left: 40px;
     margin-top: 100px;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
 }
 
 .nav h1 a {
     text-decoration: none;
-    color: red;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
     font-weight: bold;
     font-size: 30px;
 }
@@ -56,7 +60,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: crimson;
+    background-color: #00FFFF;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -67,13 +71,13 @@ body {
 .nav-link h3 svg {
     width: 18px;
     height: 18px;
-    fill: black;
+    fill: white;
     transition: all 0.3s ease;
 }
 
 /* Matn (span o‘rnida ishlatiladi) */
 .nav-link h3 span {
-    color: black;
+    color: white;
     transition: all 0.3s ease;
     font-size: 16px;
 }
@@ -89,32 +93,37 @@ body {
 }
 
 .nav-link:hover h3 span {
-    color: crimson;
     font-size: 17.5px;
     font-weight: bold;
 }
 
+.nav-link:active h3 span {
+    color: crimson;
+    text-shadow: 0 0 10px black;
+    transition: all 0.2s ease;
+}
+
 .nav-link:hover h3 svg {
-    fill: crimson;
+    fill: white;
     transform: scale(1.2);
 }
 
 .nav p {
     margin-left: 38px;
     margin-top: 50px;
-    color: rgba(0, 0, 0, 0.5);
     font-size: small;
 }
+
 
 /*About_me*/
 .about_me {
     width: 1150px;
     height: auto;
-    margin-left: 350px;
+    margin-left: 325px;
     margin-top: 60px;
-    position: absolute;
     font-family: "Rubik", sans-serif;
     font-size: 20px;
+    position: absolute;
 }
 
 .hr1 {
@@ -167,7 +176,9 @@ body {
 }
 
 .about_me_section_p span {
-    color: rgba(0, 0, 0, 0.404);
+    color: white;
+    text-shadow: 0 0 5px #00ffff;    
+
 }
 
 .about_me_section2 {
@@ -181,6 +192,7 @@ body {
 
 .about_me_section button {
     padding: 15px 22px;
+    margin-top: 30px;
     font-size: 16px;
     border: 2px solid crimson;
     background-color: crimson;
@@ -217,26 +229,65 @@ body {
     justify-content: space-between;
     font-size: 16px;
     margin-bottom: 5px;
-    color: rgba(12, 12, 12, 0.689);
+    color:white;
 }
 
 .bar {
     width: 100%;
     height: 6px;
-    background-color: #e0e0e0;
+    background-color: white;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.fill {
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  .fill {
     height: 100%;
-    background-color: crimson;
+    background-color: #00FFFF;
     border-radius: 10px;
     transform-origin: left;
     transform: scaleX(0);
-    /* boshlanish holati */
-    animation: growBar 2s ease forwards;
-}
+    animation: growBar 3s ease forwards;
+  }
+  
+  /* Har bir texnologiya uchun width VA delay qo‘shiladi */
+  
+  .fill.html {
+    width: 86%;
+    animation-delay: 0.2s;
+  }
+  
+  .fill.css {
+    width: 90%;
+    animation-delay: 0.4s;
+  }
+  
+  .fill.bootstrap {
+    width: 90%;
+    animation-delay: 0.6s;
+  }
+  
+  .fill.javascript {
+    width: 60%;
+    animation-delay: 0.8s;
+  }
+  
+  .fill.react {
+    width: 90%;
+    animation-delay: 1s;
+  }
+  
+  /* Animatsiya scaleX orqali */
+  @keyframes growBar {
+    from {
+      transform: scaleX(0);
+    }
+  
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
 
 /* Har bir texnologiya uchun delay qo‘shiladi */
 .fill.html {
@@ -316,8 +367,8 @@ body {
 .about_me_bottom div {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 0 10px #00ffff;
+    color: black;
 }
 
 .about_me_bottom .education h2 {
@@ -329,7 +380,7 @@ body {
 }
 
 .vertical-line {
-    width: 1px;
+    width: 2.2px;
     height: 628px;
     /* balandlikni keraklicha o‘zgartirasan */
     background-color: crimson;
@@ -364,26 +415,27 @@ body {
 
 .date {
     font-size: 14px;
-    color: rgb(95, 94, 94);
+    color: black;
     margin-left: 75px;
     margin-top: -645px;
 }
 
 .education h4 {
     margin-left: 50px;
+    color: #0E121A;
 }
 
 .school__description {
     font-size: 18px;
     margin-left: 50px;
-    color: rgb(121, 121, 121);
+    color:black;
     line-height: 24px;
 }
 
 .smm__description {
     font-size: 18px;
     margin-left: 50px;
-    color: rgb(121, 121, 121);
+    color:black;
     line-height: 24px;
     width: 460px;
 }
@@ -396,7 +448,7 @@ body {
 .student_it__park {
     font-size: 18px;
     margin-left: 50px;
-    color: rgb(121, 121, 121);
+    color: black;
     line-height: 24px;
     width: 460px;
 }
@@ -404,66 +456,6 @@ body {
 .student_it_park {
     position: absolute;
     margin-top: 870px;
-}
-
-.dot1 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 18px;
-    border-radius: 50%;
-    margin-top: -705px;
-    position: relative;
-}
-
-.dot2 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 18px;
-    border-radius: 50%;
-    margin-top: 250px;
-    position: relative;
-}
-
-.dot3 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 18px;
-    border-radius: 50%;
-    margin-top: 180px;
-    position: relative;
-}
-
-.dot4 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 584px;
-    border-radius: 50%;
-    margin-top: -480px;
-    position: relative;
-}
-
-.dot5 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 584px;
-    border-radius: 50%;
-    margin-top: 255px;
-    position: relative;
-}
-
-.dot6 {
-    width: 15px;
-    height: 15px;
-    background-color: crimson;
-    margin-left: 584px;
-    border-radius: 50%;
-    margin-top: 237px;
-    position: relative;
 }
 
 .html_css_developer h4 {
@@ -487,6 +479,7 @@ body {
     margin-top: 900px;
     position: absolute;
 }
+
 .about_me_bottom .education,
 .about_me_bottom .experience {
     transition: all 0.3s ease;
@@ -495,8 +488,7 @@ body {
 .about_me_bottom .education:hover,
 .about_me_bottom .experience:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    background-color: #fafafa;
+    transform: scale(1.02);
 }
 
 /*/ About me*/

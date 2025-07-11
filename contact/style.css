@@ -1,14 +1,15 @@
 body {
-    background-color: #dfd5d5;
+    background: #0E121A;
+    color: #e2e8f0;
 }
 
 .nav {
     width: 270px;
     height: 100vh;
-    background-color: white;
+    background-color: #232833;
     position: fixed;
     font-family: "Rubik", sans-serif;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0.1px 0 10px #00ffff8f;
     margin-left: -7px;
     margin-top: -7px;
 }
@@ -16,11 +17,14 @@ body {
 .nav h1 {
     margin-left: 40px;
     margin-top: 100px;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
 }
 
 .nav h1 a {
     text-decoration: none;
-    color: red;
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
     font-weight: bold;
     font-size: 30px;
 }
@@ -56,7 +60,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: crimson;
+    background-color: #00FFFF;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -67,13 +71,13 @@ body {
 .nav-link h3 svg {
     width: 18px;
     height: 18px;
-    fill: black;
+    fill: white;
     transition: all 0.3s ease;
 }
 
 /* Matn (span o‘rnida ishlatiladi) */
 .nav-link h3 span {
-    color: black;
+    color: white;
     transition: all 0.3s ease;
     font-size: 16px;
 }
@@ -89,20 +93,24 @@ body {
 }
 
 .nav-link:hover h3 span {
-    color: crimson;
     font-size: 17.5px;
     font-weight: bold;
 }
 
+.nav-link:active h3 span {
+    color: crimson;
+    text-shadow: 0 0 10px black;
+    transition: all 0.2s ease;
+}
+
 .nav-link:hover h3 svg {
-    fill: crimson;
+    fill: white;
     transform: scale(1.2);
 }
 
 .nav p {
     margin-left: 38px;
     margin-top: 50px;
-    color: rgba(0, 0, 0, 0.5);
     font-size: small;
 }
 
@@ -146,7 +154,6 @@ body {
 .contact_me p{
     text-align: center;
     font-size: medium;
-    color: rgb(0,0,0,0.6);
     margin-top: -15px;
 }
 
@@ -156,11 +163,15 @@ body {
     height: 180px;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    transition: all 0.2s step-end;
+    transition: all 0.2s ease;
+}
+.contact_mee .div{
+    box-shadow: 0 0 5px #00ffff;
+    border-radius:10px;
+
 }
 .contact_mee .div:hover{
     transform: scale(1.02);
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.5);
 }
 .contact_me_inputs{
     width: 1150px;
@@ -175,15 +186,14 @@ body {
     border: none;
     font-size: 15px;
     padding-left: 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease;
+    box-shadow: 0 0 5px #00ffff;
 }
 input:focus {
     transform: scale(1.01);
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.5);
+    box-shadow: 0 0 8px #00ffff;
     border: none;
     outline: none;
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.5); /* crimson shadow */
   }
   .contact_me_inputs .phone_number{
     margin-left: 40px;
@@ -201,16 +211,14 @@ input:focus {
     border: none;
     font-size: 15px;
     padding-left: 20px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px #00ffff;
     padding-top: 17px;
     transition: all 0.2s ease;
   }
   textarea:focus {
     transform: scale(1.01);
     border: none;
-    outline: none;
-    box-shadow: 0 0 8px rgba(220, 20, 60, 0.5); /* crimson shadow */
-    
+    outline: none;    
   }
   .contact_me_inputs button{
     width: 200px;
@@ -230,5 +238,4 @@ input:focus {
   .contact_me_inputs button:hover {
     background-color: #b30028; /* qoramtir crimson */
     transform: scale(1.05); /* biroz kattalashadi */
-    box-shadow: 0 8px 20px rgba(220, 20, 60, 0.4); /* pastga soya */
   }
