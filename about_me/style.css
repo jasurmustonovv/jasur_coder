@@ -1,5 +1,5 @@
 body {
-    background: #0E121A;
+    background: #0e121a;
     color: #e2e8f0;
 }
 
@@ -60,7 +60,7 @@ body {
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: #00FFFF;
+    background-color: #00ffff;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -113,7 +113,6 @@ body {
     margin-top: 50px;
     font-size: small;
 }
-
 
 /*About_me*/
 .about_me {
@@ -177,8 +176,7 @@ body {
 
 .about_me_section_p span {
     color: white;
-    text-shadow: 0 0 5px #00ffff;    
-
+    text-shadow: 0 0 5px #00ffff;
 }
 
 .about_me_section2 {
@@ -229,7 +227,7 @@ body {
     justify-content: space-between;
     font-size: 16px;
     margin-bottom: 5px;
-    color:white;
+    color: white;
 }
 
 .bar {
@@ -239,55 +237,54 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px #00ffff;
-  }
-  
-  .fill {
+}
+
+.fill {
     height: 100%;
-    background-color: #00FFFF;
+    background-color: #00ffff;
     border-radius: 10px;
     transform-origin: left;
     transform: scaleX(0);
     animation: growBar 3s ease forwards;
-  }
-  
-  /* Har bir texnologiya uchun width VA delay qo‘shiladi */
-  
-  .fill.html {
+}
+
+/* Har bir texnologiya uchun width VA delay qo‘shiladi */
+
+.fill.html {
     width: 86%;
     animation-delay: 0.2s;
-  }
-  
-  .fill.css {
+}
+
+.fill.css {
     width: 90%;
     animation-delay: 0.4s;
-  }
-  
-  .fill.bootstrap {
+}
+
+.fill.bootstrap {
     width: 90%;
     animation-delay: 0.6s;
-  }
-  
-  .fill.javascript {
+}
+
+.fill.javascript {
     width: 60%;
     animation-delay: 0.8s;
-  }
-  
-  .fill.react {
+}
+
+.fill.react {
     width: 90%;
     animation-delay: 1s;
-  }
-  
-  /* Animatsiya scaleX orqali */
-  @keyframes growBar {
+}
+
+/* Animatsiya scaleX orqali */
+@keyframes growBar {
     from {
-      transform: scaleX(0);
+        transform: scaleX(0);
     }
-  
+
     to {
-      transform: scaleX(1);
+        transform: scaleX(1);
     }
-  }
-  
+}
 
 /* Har bir texnologiya uchun delay qo‘shiladi */
 .fill.html {
@@ -422,20 +419,20 @@ body {
 
 .education h4 {
     margin-left: 50px;
-    color: #0E121A;
+    color: #0e121a;
 }
 
 .school__description {
     font-size: 18px;
     margin-left: 50px;
-    color:black;
+    color: black;
     line-height: 24px;
 }
 
 .smm__description {
     font-size: 18px;
     margin-left: 50px;
-    color:black;
+    color: black;
     line-height: 24px;
     width: 460px;
 }
