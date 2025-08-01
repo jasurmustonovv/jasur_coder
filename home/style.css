@@ -1,6 +1,7 @@
 body {
     background-color: #0E121A;
     color: white;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -186,7 +187,6 @@ body {
     color: #00FFFF;
     margin-left: 8px;
     text-shadow: 0 0 10px #00ffff;
-
 }
 
 .description {
@@ -196,10 +196,168 @@ body {
     font-family: "Rubik", sans-serif;
     color: white;
     text-shadow: 0 0 10px #00ffff;
-
 } 
 /* Katta telefonlar (480px - 768px oralig‘i) */
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
+    .jasur_coder_logo {
+        margin-left: 700px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 673px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 715px;
     
-
+    } 
+  }
+  @media (max-width: 1115px) {
+    .jasur_coder_logo {
+        margin-left: 620px;
+        margin-top: 130px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 593px;
+        margin-top: 460px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 633px;
+        margin-top: 340px;
+    } 
+  }
+  @media (max-width: 884px) {
+    .jasur_coder_logo {
+        margin-left: 510px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 480px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 525px;
+    } 
+  }
+  @media (max-width: 800px) {
+    .jasur_coder_logo {
+        margin-left: 480px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 450px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 493px;
+    } 
+  }
+  @media (max-width: 768px) {
+    .jasur_coder_logo {
+        margin-left: 455px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 425px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 473px;
+    } 
+  }
+  @media (max-width: 440px) {
+    .nav {
+        width: 100%;
+        max-width: 440px;
+        height: 8vh;
+        background-color: #0E121A;
+        position: fixed;
+        box-shadow: 0.1px 0 3px #00ffff8f;
+        margin-left: -7px;
+        margin-top: -7px;
+    }
+    .nav h1 {
+        padding: 10px;
+        margin-left: 1px;
+        margin-top: 5px;
+        font-size: 1.5rem;
+        transform: translateX(130px);
+    }
+    .nav h1 a {
+        font-size: 1.5rem;
+    }
+    .nav ul {
+        margin-top:5px;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .nav ul li{
+        display: flex;
+    }
+    .nav-link h3 svg {
+        width: 14px;
+        height: 14px;
+        fill: white;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link h3 {
+        gap: 17px;
+        font-size: 10px;
+        position: relative;
+        padding: 5px 0;
+    }
+    .nav-link h3::before {
+        position: absolute;
+        left: -10px;
+    }
+    .nav-link h3 span {
+        font-size: 10px;
+        position: relative;
+        left: -10px;
+    }
+    .nav-link:hover h3 span {    
+        font-size: 11px;
+    }
+    .nav-link:hover h3 {
+        transform: translateX(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .jasur_coder_logo img {
+        width: 170px;
+        height: 170px;
+    }
+    .jasur_coder_logo {
+        margin-left: 125px;
+        margin-top: 200px;
+        width: 180px;
+        height: 180px;
+    }
+    .jasur_coder_logo_bottom {
+        position: absolute;
+        left: 115px;
+        margin-top: 530px;
+    }
+    .jasur_coder_logo_bottom div {
+        width: 30px;
+        height: 30px;
+    }
+    .jasur_coder_logo_bottom svg {
+        width: 14px;
+        height: 14px;
+    }
+    .description {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 400px;
+    } 
+    .nav p {
+        margin-left: 145px;
+        margin-top: 50px;
+        transform: translateY(540px);
+        font-size: small;
+        color: rgb(201, 199, 197);
+    }
   }
