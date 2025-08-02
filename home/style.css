@@ -385,4 +385,21 @@ body {
         transform: translateY(600px);
         margin-left: -470px;
     }
+    .nav-link h3::before {
+        content: "";
+        position: absolute;
+        bottom: -5px; /* h3 tagidan biroz pastroq */
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #00FFFF;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        border-radius: 2px;
+        top: 28px;
+    }
+    .nav-link h3:hover::before {
+        transform: scaleX(1);
+    }
   }
