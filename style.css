@@ -10,7 +10,7 @@ body {
     background-color: #232833;
     position: fixed;
     font-family: "Rubik", sans-serif;
-    box-shadow: 0.1px 0 10px #00ffff8f;
+    box-shadow: 0.1px 0 1px #00ffff8f;
     margin: 0;
     padding: 0;
 }
@@ -529,5 +529,7 @@ body {
         transform: translateY(410px);
         font-size: .6rem;
         color: rgb(201, 199, 197);
+        display: flex;
+        
     }
   }
